@@ -1,5 +1,10 @@
 # Option Pricing: GBM vs Merton Jump-Diffusion
 
+## Theory reference (paper)
+This project's theoretical foundation for jump-diffusion option pricing follows the paper:
+
+[1] Karmanpartap Singh Sidhu, Pranshi Saxena, "Beyond Black-Scholes: A Computational Framework for Option Pricing Using Heston, GARCH, and Jump Diffusion Models" arXiv,  2026, arXiv:2604.06068.
+
 ## Theme : 
 This project prices European call options from live market data using Monte Carlo simulation and compares two models: GBM and Merton Jump-Diffusion. GBM assumes continuous random movement. Merton adds random jumps to capture sharp moves. Jump parameters are calibrated with L-BFGS-B so model prices are as close as possible to market prices.
 
@@ -109,3 +114,4 @@ Important: negative JD-MC is not automatically good or bad. Good means model err
 ```bash
 python3 main.py
 ```
+
